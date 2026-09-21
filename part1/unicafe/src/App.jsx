@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 const Button = (props) => <button onClick={props.onClick}>{props.text}</button>
+
 const StatisticLine = (props) => {
   return (
     <tr>
@@ -9,8 +10,6 @@ const StatisticLine = (props) => {
     </tr>
   )
 }
-
-
 
 const Stats = (props) => {
   const total = props.good + props.neutral + props.bad
